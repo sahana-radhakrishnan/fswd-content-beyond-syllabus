@@ -27,7 +27,7 @@ function App() {
     setLoading(true)
 
     try {
-      await axios.post('/students', {
+      await axios.post('https://fswd-content-beyond-syllabus.onrender.com/students', {
         ...student,
         year: Number(student.year)
       })

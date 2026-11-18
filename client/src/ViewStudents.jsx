@@ -10,7 +10,7 @@ function ViewStudents() {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await axios.get('/students')
+        const response = await axios.get('https://fswd-content-beyond-syllabus.onrender.coms/students')
         setStudents(response.data)
       } catch (error) {
         console.error('Error fetching students:', error)
